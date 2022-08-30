@@ -11,10 +11,10 @@ public class TV {
 	public TV(Marca marca, boolean estado) {
 		this.marca= marca;
 		this.estado= estado;
-		numTV+=1;
+		numTV++;
 	}
 	public void setCanal(int canal) {
-		if(this.estado==true && this.canal>=0 && this.canal<= 120) {
+		if(estado && canal>=0 && canal<= 120) {
 			this.canal=canal;
 		}
 	}
@@ -28,7 +28,7 @@ public class TV {
 		return this.precio;
 	}
 	public void setVolumen(int volumen) {
-		if(this.estado==true && this.volumen>=0 && this.volumen<= 7) {
+		if(estado && volumen>=0 && volumen<= 7) {
 			this.volumen=volumen;
 		}
 	}
@@ -63,23 +63,23 @@ public class TV {
 		return this.estado;
 	}
 	public void canalUp() {
-		if(this.estado==true && 0<=this.canal && this.canal< 120) {
-			this.canal++;
+		if(canal < 120 && estado) {
+			canal++;
 			}
 		}
 	public void canalDown() {
-		if(this.estado==true && 0<this.canal&& this.canal<= 120) {
-			this.canal--;			}
+		if(canal > 1 && estado) {
+			canal--;			}
 		}
 	public void volumenUp() {
-		if(this.estado==true && this.volumen>=0 && this.volumen< 7) {
-			this.volumen++;
+		if(volumen < 7 && estado) {
+			volumen++;
 			}
 		}
 	
 	public void volumenDown() {
-		if(this.estado==true && this.volumen>0 && this.volumen<= 7) {
-				this.volumen--;
+		if(volumen > 0 && estado) {
+				volumen--;
 			}
 		}
 	
