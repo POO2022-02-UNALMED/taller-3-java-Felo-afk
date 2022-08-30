@@ -76,7 +76,7 @@ public class TV {
 			}
 		}
 	}
-	public void volumennUp() {
+	public void volumenUp() {
 		if(this.estado==true) {
 			if(this.volumen>=0 && this.volumen<= 7) {
 				this.volumen++;

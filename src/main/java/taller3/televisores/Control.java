@@ -6,7 +6,7 @@ public class Control {
 		this.tv=tv;
 		tv.setControl(this);
 	}
-	public void setTv(TV tv) {
+	public void setT(TV tv) {
 		this.tv=tv;
 	}
 	public TV getTv() {
@@ -19,7 +19,7 @@ public class Control {
 		tv.turnOff();
 	}
 	public void volumenUp() {
-		tv.volumennUp();
+		tv.volumenUp();
 	}
 	public void volumenDown() {
 		tv.volumenDown();
